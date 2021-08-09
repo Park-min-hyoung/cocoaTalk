@@ -1,0 +1,72 @@
+body {
+  background: wheat;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 350px;
+  background: white;
+  margin: 15px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box div:nth-child(1) {
+  width: 95%;
+  height: 15px;
+  margin: 5px auto;
+}
+
+.box div:nth-child(2) {
+  font-weight: 1000;
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.box div:nth-child(3) {
+  font-weight: 1000;
+  font-size: 15px;
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+
+.box div:nth-child(4) {
+  width: 95%;
+  height: 225px;
+  margin: 5px auto;
+}
+
+.tomato div:nth-child(1),
+.tomato div:nth-child(4) {
+  background-color: tomato;
+}
+
+.teal div:nth-child(1),
+.teal div:nth-child(4) {
+  background-color: teal;
+}
+
+.burlywood div:nth-child(1),
+.burlywood div:nth-child(4) {
+  background-color: burlywood;
+}
+
+.thistle div:nth-child(1),
+.thistle div:nth-child(4) {
+  background-color: thistle;
+}
