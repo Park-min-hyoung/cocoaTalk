@@ -1,0 +1,79 @@
+@keyframes circleRotation {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes squareScale {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+body {
+  background-color: teal;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+}
+
+article:first-child {
+  animation: circleRotation 1s ease-in-out infinite;
+}
+
+article:first-child div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+article:last-child div {
+  width: 10px;
+  height: 40px;
+  background-color: white;
+}
+
+article:last-child div:nth-child(1) {
+  animation: squareScale 1s 0s ease-out infinite;
+}
+
+article:last-child div:nth-child(2) {
+  animation: squareScale 1s 0.07s ease-out infinite;
+}
+
+article:last-child div:nth-child(3) {
+  animation: squareScale 1s 0.14s ease-out infinite;
+}
+
+article:last-child div:nth-child(4) {
+  animation: squareScale 1s 0.21s ease-out infinite;
+}
+
+article:last-child div:nth-child(5) {
+  animation: squareScale 1s 0.28s ease-out infinite;
+}
