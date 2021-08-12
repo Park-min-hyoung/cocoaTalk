@@ -4,6 +4,7 @@
   width: 100%;
   background-color: #f9f9fa;
   padding: 20px 50px;
+  /* "내가 padding을 줘도 신경쓰지마. 내 box 사이즈를 늘리지 말아줘"라는 뜻 */
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
