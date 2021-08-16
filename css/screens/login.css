@@ -29,9 +29,11 @@
   margin-bottom: 25px;
 }
 
-#login-form input:not([type="submit"]) {
+#login-form input:not([type="submit"], [type="button"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
+  border-radius: 25px;
+  padding-left: 10px;
 }
 
 #login-form input::placeholder {
@@ -42,7 +44,8 @@
   border-color: var(--yellow);
 }
 
-#login-form input[type="submit"] {
+#login-form input[type="submit"],
+#login-form input[type="button"] {
   background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;

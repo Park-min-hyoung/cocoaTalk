@@ -29,6 +29,21 @@
   font-weight: 600;
 }
 
-.alt-header__column span:last-child {
+.alt-header__column span:last-child,
+.alt-header__column span:nth-child(2) {
   margin-left: 20px;
+}
+
+@keyframes alramOff {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.alt-header__column span .fa-bell-slash:hover {
+  color: red;
+  animation: alramOff 0.3s ease-in-out forwards;
 }

@@ -1,14 +1,22 @@
+.settings-list1 {
+  margin-bottom: 20px;
+}
+
 .settings__setting {
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.settings-list1 .settings__setting:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .settings__setting i {
-  margin-right: 20px;
+  width: 50px;
   font-size: 22px;
   opacity: 0.8;
 }

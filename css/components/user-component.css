@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .user-component,
@@ -15,9 +16,15 @@
   margin-right: 20px;
 }
 
+.user-component__column:first-child #birthday {
+  display: flex;
+  align-items: center;
+}
+
 .user-component__title {
   font-weight: 600;
   font-size: 22px;
+  margin-right: 10px;
 }
 
 .user-component__subtitle {
@@ -46,6 +53,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.user-component__column:last-child #gift {
+  background-color: white;
+  padding: 5px 8px;
+  border-radius: 20px;
+  color: black;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .user-componet__time {

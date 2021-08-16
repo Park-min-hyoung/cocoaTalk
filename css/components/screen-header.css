@@ -27,3 +27,16 @@
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 2s linear infinite;
 }
+
+@keyframes extendSearch {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+.screen-header__icons .fa-search:hover {
+  animation: extendSearch 1s linear infinite;
+}

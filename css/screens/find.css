@@ -1,21 +1,61 @@
-.recommended-friends {
+.recommended-movie {
   padding: 25px 0;
   margin: 25px 0;
   border-top: var(--main-border);
   border-bottom: var(--main-border);
 }
 
-.recommended-friends__title {
+.recommended-movie__title {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
 }
 
-.recommended-friends span {
-  margin: 100px 0;
-  display: block;
-  text-align: center;
+.recommended-movie__introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes fadeInPhoto {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  1% {
+    opacity: 0;
+    transform: translateX(-450px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes appearTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.recommended-movie__photo {
+  width: 200px;
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  transform: translateX(-450px);
+  animation: fadeInPhoto 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.recommended-movie__introduce span {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: appearTitle 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
 
 .open-chat__header {
@@ -33,6 +73,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .open-post__title {
@@ -77,6 +118,19 @@
 
 .open-post__photo {
   position: relative;
+}
+
+@keyframes extendPhoto {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-150px) translateY(-75px) scale(2);
+  }
+}
+
+.open-post__photo:hover {
+  animation: extendPhoto 0.5s ease-in-out forwards;
 }
 
 .open-post__photo img {

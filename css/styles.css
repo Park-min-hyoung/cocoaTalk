@@ -24,6 +24,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+  background-image: url("../img/simple.jpg");
+  background-size: contain;
+  padding-top: 30px;
+  height: 100vh;
 }
 
 .main-screen {
